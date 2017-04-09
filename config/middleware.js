@@ -1,4 +1,4 @@
-var morgan = require('morgan');
+var morgan = require('morgan'); //to save the request detail
 var bodyParser = require('body-parser');
 
 module.exports = function (app, express) {

@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<title>Expedia Data</title>
-  	<script src="lib/angular.js"></script>
+    <title>Expedia Data</title>
+    <script src="lib/angular.js"></script>
     <script src="lib/angular-route.js"></script>
     <script src="app.js"></script>
-    <header align='center'><h1>Expedia Task</h1></header>
+    <header style="background-color:purple; color:white; height:80%" align='center'><h1 style="padding-top: 2%">Expedia Task</h1> </header>
   </head>
   <body ng-app="myApp">
+    <div style="padding-top: 5%" align='center' ng-model="search"  >     
+      <input type="text" placeholder="Search" ng-model="search">
+      <button type="submit" class="btn btn-default">Search</button>
+    </div>
     <div ng-controller="AllExpediaData" >
-      <div ng-repeat="data in AllData" >
-        <div  ng-repeat="hotel in data" >
-          <div bgcolor="green"> 
-            <h1>{{hotel.hotelCity}}</h1>
-            <h3>{{hotel.hotelName}}</h3>
-            <h6>{{hotel.hotelStreetAddress}}</h6>
-            <img height="400" width="400" ng-src={{hotel.hotelImageUrl}}/>
-            <p>{{hotel.description}}</p>
+        <div ng-repeat="data in AllData" >
+          <div  ng-repeat="hotel in data" >
+            <div> 
+              <h1 style="color: purple">{{hotel.hotelCity}}</h1>
+              <p>{{hotel.hotelName}}</p>
+              <p>{{hotel.hotelStreetAddress}}</p>
+              <img  width="600px" hight="100px" ng-src={{hotel.hotelImageUrl}}  />
+              <p>{{hotel.description}}</p>
+            </div>
           </div>
         </div>
-      </div>
     </div>
   </body>
 </html>
+
+

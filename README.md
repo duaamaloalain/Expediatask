@@ -1,4 +1,5 @@
 ExpediaTask
+
 This project was generated with angular
 
 ## Author
@@ -10,12 +11,18 @@ This project was generated with angular
 - express framework 
 - angular for frontend
 
-## Development
+### Built With
+
+NodeJs
+Express Framework
+Angular for front end
+
 
 ### Installing Dependencies
 
 From within the root directory:
 npm install
 
-
+### Links
+on heroku "https://expediataskduaa.herokuapp.com/"
 
